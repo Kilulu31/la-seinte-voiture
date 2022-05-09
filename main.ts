@@ -33,6 +33,9 @@ input.onGesture(Gesture.LogoUp, function () {
         basic.pause(10)
     }
 })
+input.onButtonPressed(Button.A, function () {
+    radio.sendNumber(3)
+})
 input.onGesture(Gesture.TiltRight, function () {
     while (input.isGesture(Gesture.TiltRight)) {
         radio.sendNumber(1)
@@ -44,6 +47,9 @@ input.onGesture(Gesture.TiltLeft, function () {
         radio.sendNumber(0)
         basic.pause(10)
     }
+})
+input.onButtonPressed(Button.B, function () {
+    radio.sendNumber(2)
 })
 input.onGesture(Gesture.LogoDown, function () {
     while (input.isGesture(Gesture.LogoDown)) {

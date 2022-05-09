@@ -1,23 +1,19 @@
 def on_received_number(receivedNumber):
     global VITESSE
     if receivedNumber == 0:
-        servos.P0.set_stop_on_neutral(True)
         servos.P0.run(VITESSE)
         basic.pause(10)
-        servos.P0.set_stop_on_neutral(False)
+        servos.P0.run(0)
     if receivedNumber == 1:
-        servos.P1.set_stop_on_neutral(True)
         servos.P1.run(VITESSE)
         basic.pause(10)
-        servos.P1.set_stop_on_neutral(False)
+        servos.P1.run(0)
     if receivedNumber == 4:
-        servos.P0.set_stop_on_neutral(True)
-        servos.P1.set_stop_on_neutral(True)
         servos.P0.run(-40)
         servos.P1.run(-40)
         basic.pause(10)
-        servos.P0.set_stop_on_neutral(False)
-        servos.P1.set_stop_on_neutral(False)
+        servos.P0.run(0)
+        servos.P1.run(0)
     if receivedNumber == 2:
         if VITESSE > 100:
             VITESSE = VITESSE + 5

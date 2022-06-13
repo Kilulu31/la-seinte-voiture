@@ -5,7 +5,13 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "servo": "*"
+        "servo": "*",
+        "pxt-sonar": "github:Microsoft/pxt-sonar#v0.0.5",
+        "Grove": "github:seeed-studio/pxt-grove#v0.5.0",
+        "CODO": "github:codomicrobit/pxt-codo#f19ac96dae3db6f60feb76a3178066c3ce3d19a8",
+        "pxt-grove-zero-for-microbit": "github:seeed-studio/pxt-grove-zero-for-microbit#1.0.4",
+        "maqueen": "github:dfrobot/pxt-maqueen#v1.7.0",
+        "neopixel": "github:Microsoft/pxt-neopixel#v0.7.3"
     },
     "files": [
         "main.blocks",
